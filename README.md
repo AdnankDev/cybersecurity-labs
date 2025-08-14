@@ -21,19 +21,7 @@ The focus is on **real-world style, hands-on activities** across:
 
 > “Security is not just learned — it’s practiced.”
 
----
 
-## 🗂 **Repository Structure**
-
-| 📁 Folder | 📜 Description |
-|-----------|----------------|
-| **`labs/`** | Individual lab exercises with objectives, steps, and results |
-| **`projects/`** | End-to-end projects applying multiple cybersecurity concepts |
-| **`reports/`** | Professional write-ups and documentation of findings |
-| **`resources/`** | References, guides, and learning materials |
-| **`evidence/`** | Screenshots, logs, PCAPs, and supporting files |
-
----
 
 ## 🛠 **Skills & Tools Covered**
 
