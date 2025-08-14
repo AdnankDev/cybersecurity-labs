@@ -1,91 +1,77 @@
-# 🛡️ Adnan Khan – Cybersecurity Labs & Projects
+# 🛡️ **Adnan Khan – Cybersecurity Labs Repository**
 
-🎓 Cybersecurity Student | Hands-On Learner | Future Security Analyst  
-📧 adnankprofesstional@gmail.com  
- 🐙 [GitHub](https://github.com/AdnankDev)
-
----
-
-## 📁 Welcome to My Cybersecurity Journey
-
-This repository is a **collection of all my labs, projects, and hands-on activities** in cybersecurity.  
-Each project reflects my growing skills in **network analysis, incident investigation, protocol behavior, and defensive techniques** — all built through self-study, labs, and real tool usage.
-
-> “Knowing how systems break is the first step to securing them.”  
-
-Here, you’ll find practical work using tools like:
-- **Wireshark** – Packet analysis
-- **Command Line** – Network troubleshooting
-- **Simulated Attacks & Failures** – For learning defense
-
-No theoretical fluff — just **real analysis, real tools, real reports**.
-
----
-
-## 🧩 What’s Inside
-
-| Folder | Description |
-|-------|-------------|
-| `dns-failure-analysis/` | Investigated "destination port unreachable" using Wireshark and DNS simulation |
-| `network-traffic-analysis/` | Analyzed TCP, UDP, ICMP traffic in different scenarios |
-| `incident-reports/` | Formal reports on simulated security/network incidents |
-| `wireshark-captures/` | `.pcapng` files from my labs |
-| `learning-notes/` | Key concepts, commands, and takeaways |
-
-📁 **Each lab includes:**
-- A clear objective
-- Step-by-step process
-- Tools used
-- Findings & conclusions
-- Supporting evidence (screenshots, PCAP files, PDF reports)
-
----
-
-## 🛠 Tools & Skills Practiced
-
-- 🔍 **Wireshark** – Deep packet inspection
-- 💻 **Command Line (Windows/Mac)** – `nslookup`, `netsh`, `ipconfig`, `dig`
-- 📡 **TCP/IP Model** – Understanding DNS, ICMP, UDP, HTTP
-- 🧪 **Network Troubleshooting** – Simulating outages and failures
-- 📄 **Incident Reporting** – Writing clear, professional summaries
-- 🧠 **Analytical Thinking** – Turning raw data into insights
-
----
-
-## 📚 Learning Resources I Use
-- TryHackMe / Hack The Box (Beginner Paths)
-- Professor Messer (CompTIA Security+)
-- Wireshark Official Docs
-- Cyber Aces & Cybrary
-
----
-
-## 📎 How to Use This Repo
-1. Clone or download any lab folder
-2. Open `.pcapng` files in **Wireshark**
-3. Read the `report.pdf` or `README.md` to follow the analysis
-4. Replicate the lab on your machine (safe & ethical!)
-
----
-
-## 📝 License & Ethics
-All labs are:
-- Conducted in **safe, isolated environments**
-- Using **non-existent domains/IPs** (e.g., `203.0.113.2`)
-- For **educational purposes only**
-
-No real systems were targeted.
-
-MIT License applies to code and documentation unless otherwise noted.
-
----
-
-## 🚀 Let’s Connect!
-I’m passionate about cybersecurity and always open to feedback, collaboration, or internship opportunities.
-
-📬 **Email:** adnankprofesstional@gmail.com  
+🎓 **Cybersecurity Student** | 📚 **Hands-On Learner** | 🔐 **Future Security Analyst**  
+📧 **Email:** [adnankprofesstional@gmail.com](mailto:adnankprofesstional@gmail.com)  
 🐙 **GitHub:** [@AdnankDev](https://github.com/AdnankDev)
 
 ---
 
-> 🔐 This repo grows with me — one packet, one lab, one lesson at a time.
+## 🎯 **About This Repository**
+
+Welcome to **`cybersecurity-labs`** — my central collection of **practical cybersecurity work**.  
+This repository serves as a growing archive of labs, exercises, and experiments I complete while learning and practicing security concepts.
+
+The focus is on **real-world style, hands-on activities** across:
+- 🖥 **Operating Systems & Command Line** (Linux, Windows, macOS)
+- 📡 **Networking & Protocols**  
+- 📜 **Security Policies, Compliance & Risk Management**
+- 🛠 **Cybersecurity Tools & Utilities**
+- 🚨 **Incident Response & Digital Forensics**
+- 🔍 **Threat Analysis & Vulnerability Assessment**
+
+> “Security is not just learned — it’s practiced.”
+
+
+
+## 🛠 **Skills & Tools Covered**
+
+*(This list expands as I progress)*  
+- **Operating Systems:** Linux CLI, Windows Administration, macOS Basics  
+- **Networking:** TCP/IP, DNS, HTTP/S, ICMP, Routing, Firewall rules  
+- **Security Concepts:** CIA Triad, Zero Trust, Authentication & Authorization  
+- **Compliance & Governance:** Security policies, risk frameworks, access control  
+- **Incident Response:** Detection, containment, eradication, recovery  
+- **Threat Analysis:** Log review, packet capture, malware basics  
+- **Cybersecurity Tools:**  
+  - Wireshark, Nmap, Netcat  
+  - Linux utilities (`grep`, `chmod`, `netstat`, `systemctl`)  
+  - Security monitoring tools & online scanners  
+- **Analytical Skills:** Problem-solving, data interpretation, reporting
+
+---
+
+## 📚 **Learning Sources**
+I learn through a mix of structured courses, reading, and experimentation:  
+- 🎓 **Professional Certifications & Courses** — *Google Cybersecurity Professional Certificate*, TryHackMe, Hack The Box  
+- 📘 **Books** — *CompTIA Security+ Guide to Network Security Fundamentals*, *Linux Basics for Hackers*, and more  
+- 🌐 **Self-Research** — Blogs, whitepapers, GitHub projects, vendor documentation  
+- 🎥 **Video Learning** — Cybersecurity YouTube channels, conference talks
+
+---
+
+## 🖥 **How to Explore This Repo**
+
+1. Navigate through the folder structure to choose a lab or project.  
+2. Read the included `README.md` or `report.pdf` for the full process and findings.  
+3. Review any supporting evidence (screenshots, logs, configurations).  
+4. If possible, replicate the lab in your own **safe testing environment**.  
+
+---
+
+## ⚖ **Ethics & License**
+
+- 🛡 All labs are conducted in **controlled, ethical environments**.  
+- 🌍 Only **non-production systems & dummy IPs/domains** are used.  
+- 📜 Licensed under the **MIT License** unless otherwise noted.  
+
+---
+
+## 🤝 **Let’s Collaborate**
+I welcome **feedback**, **collaboration**, and **networking opportunities** in the cybersecurity field.  
+
+📧 [adnankprofesstional@gmail.com](mailto:adnankprofesstional@gmail.com)  
+🐙 [@AdnankDev](https://github.com/AdnankDev)  
+
+---
+
+> 🔐 **cybersecurity-labs** grows with every challenge I tackle, every tool I master, and every skill I refine.
