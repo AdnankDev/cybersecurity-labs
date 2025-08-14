@@ -71,6 +71,8 @@ I welcome **feedback**, **collaboration**, and **networking opportunities** in t
 
 📧 [adnankprofesstional@gmail.com](mailto:adnankprofesstional@gmail.com)  
 🐙 [@AdnankDev](https://github.com/AdnankDev)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adnanktech/)
+
 
 ---
 
