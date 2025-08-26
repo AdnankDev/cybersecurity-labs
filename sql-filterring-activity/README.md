@@ -10,7 +10,7 @@ It demonstrates how I used SQL queries with filters to investigate potential sec
 
 ---
 
-## 🛠️ Skills Demonstrated
+##  Skills Demonstrated
 - Writing SQL queries with:
   - `AND`, `OR`, and `NOT` operators
   - `LIKE` keyword for pattern matching
