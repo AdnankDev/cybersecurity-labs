@@ -20,7 +20,7 @@ After completing this lab, you will be able to:
 
 ---
 
-## 🧠 Prerequisites
+##  Prerequisites
 
 * Windows OS
 * NTFS file system
@@ -51,6 +51,8 @@ cd C:\ADS_Lab
 * Right-click drive → Properties
 ![checking property](images/property.png)
 * Ensure it shows **NTFS**
+
+* 
 ![ntfs verify](images/ntfs%20verify.png)
 ---
 
