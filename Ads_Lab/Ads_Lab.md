@@ -49,7 +49,9 @@ cd C:\ADS_Lab
 2. Verify file system:
 
 * Right-click drive → Properties
+
 ![checking property](images/property.png)
+
 * Ensure it shows **NTFS**
 
 
