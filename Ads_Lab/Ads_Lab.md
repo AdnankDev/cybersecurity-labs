@@ -1,6 +1,6 @@
 # NTFS Alternate Data Streams (ADS) – Hands-On Lab
 
-## 📌 Lab Overview
+##  Lab Overview
 
 This lab demonstrates how **NTFS Alternate Data Streams (ADS)** work, how data can be hidden inside a file, and why this feature is relevant from a **cybersecurity perspective**.
 
@@ -8,7 +8,7 @@ ADS is a feature of the **NTFS file system** that allows a single file to contai
 
 ---
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 After completing this lab, you will be able to:
 
@@ -52,7 +52,7 @@ cd C:\ADS_Lab
 ![checking property](images/property.png)
 * Ensure it shows **NTFS**
 
-* 
+
 ![ntfs verify](images/ntfs%20verify.png)
 ---
 
@@ -102,6 +102,8 @@ normal.txt
 ```
 
 This confirms the Alternate Data Stream exists.
+
+
 ![verify with dir /r](images/ads%20verification.png)
 ---
 
@@ -131,6 +133,8 @@ copy C:\Windows\System32\calc.exe .
 type calc.exe > normal.txt:calc.exe
 ```
 ![calc added as ads](images/cals%20ads%20added.png)
+
+
 3. Execute it:
 
 ```cmd
@@ -141,7 +145,7 @@ Calculator opens even though no visible EXE file exists.
 
 ---
 
-## 🧠 Explanation (Behind the Scenes)
+## Explanation (Behind the Scenes)
 
 * NTFS stores files as **attributes**
 * `$DATA` is the attribute that holds file content
@@ -215,7 +219,7 @@ dir /r
 
 ---
 
-## 🧠 Key Takeaways
+## Key Takeaways
 
 * A **stream** is a sequence of bytes
 * ADS is a **named data stream**
