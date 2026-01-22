@@ -1,4 +1,4 @@
-# 🛡️ **Adnan Khan – Cybersecurity Labs Repository**
+# **Adnan Khan – Cybersecurity Labs Repository**
 
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:adnankprofesstional@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/AdnankDev)
@@ -6,24 +6,24 @@
 
 ---
 
-## 🎯 **About This Repository**
+## **About This Repository**
 
 Welcome to **`cybersecurity-labs`** — my central collection of **practical cybersecurity work**.  
 This repository serves as a growing archive of labs, exercises, and experiments I complete while learning and practicing security concepts.
 
 The focus is on **real-world style, hands-on activities** across:
-- 🖥 **Operating Systems & Command Line** (Linux, Windows, macOS)
-- 📡 **Networking & Protocols**  
-- 📜 **Security Policies, Compliance & Risk Management**
-- 🛠 **Cybersecurity Tools & Utilities**
-- 🚨 **Incident Response & Digital Forensics**
-- 🔍 **Threat Analysis & Vulnerability Assessment**
+-  **Operating Systems & Command Line** (Linux, Windows, macOS)
+-  **Networking & Protocols**  
+-  **Security Policies, Compliance & Risk Management**
+-  **Cybersecurity Tools & Utilities**
+-  **Incident Response & Digital Forensics**
+-  **Threat Analysis & Vulnerability Assessment**
 
 > “Security is not just learned — it’s practiced.”
 
 
 
-## 🛠 **Skills & Tools Covered**
+##  **Skills & Tools Covered**
 
 *(This list expands as I progress)*  
 - **Operating Systems:** Linux CLI, Windows Administration, macOS Basics  
@@ -40,16 +40,16 @@ The focus is on **real-world style, hands-on activities** across:
 
 ---
 
-## 📚 **Learning Sources**
+##  **Learning Sources**
 I learn through a mix of structured courses, reading, and experimentation:  
-- 🎓 **Professional Certifications & Courses** — *Google Cybersecurity Professional Certificate*, TryHackMe, Hack The Box  
-- 📘 **Books** — *CompTIA Security+ Guide to Network Security Fundamentals*, *Linux Basics for Hackers*, and more  
-- 🌐 **Self-Research** — Blogs, whitepapers, GitHub projects, vendor documentation  
-- 🎥 **Video Learning** — Cybersecurity YouTube channels, conference talks
+-  **Professional Certifications & Courses** — *Google Cybersecurity Professional Certificate*, TryHackMe, Hack The Box  
+-  **Books** — *CompTIA Security+ Guide to Network Security Fundamentals*, *Linux Basics for Hackers*, and more  
+-  **Self-Research** — Blogs, whitepapers, GitHub projects, vendor documentation  
+-  **Video Learning** — Cybersecurity YouTube channels, conference talks
 
 ---
 
-## 🖥 **How to Explore This Repo**
+##  **How to Explore This Repo**
 
 1. Navigate through the folder structure to choose a lab or project.  
 2. Read the included `README.md` or `report.pdf` for the full process and findings.  
@@ -58,19 +58,19 @@ I learn through a mix of structured courses, reading, and experimentation:
 
 ---
 
-## ⚖ **Ethics & License**
+##  **Ethics & License**
 
-- 🛡 All labs are conducted in **controlled, ethical environments**.  
-- 🌍 Only **non-production systems & dummy IPs/domains** are used.  
-- 📜 Licensed under the **MIT License** unless otherwise noted.  
+-  All labs are conducted in **controlled, ethical environments**.  
+-  Only **non-production systems & dummy IPs/domains** are used.  
+-  Licensed under the **MIT License** unless otherwise noted.  
 
 ---
 
-## 🤝 **Let’s Collaborate**
+##  **Let’s Collaborate**
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:adnankprofesstional@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/AdnankDev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adnanktech/)
 
 ---
 
-> 🔐 **cybersecurity-labs** grows with every challenge I tackle, every tool I master, and every skill I refine.
+>  **cybersecurity-labs** grows with every challenge I tackle, every tool I master, and every skill I refine.

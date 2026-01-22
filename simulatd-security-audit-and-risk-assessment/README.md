@@ -1,12 +1,12 @@
-# 🛡️ Security Audit & Compliance Assessment – Botium Toys
+# Security Audit & Compliance Assessment – Botium Toys
 
 **Author:** Adnan Khan  
-📅 **Year:** 2025  
-📄 **Category:** Cybersecurity Lab – Risk Management & Security Audits  
+**Year:** 2025  
+**Category:** Cybersecurity Lab – Risk Management & Security Audits  
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This lab is a **mock internal security audit** for *Botium Toys*, designed to simulate a real-world **risk management and compliance assessment**.  
 The objective was to identify **security gaps**, evaluate **existing controls**, and recommend **improvements** using **industry-standard frameworks**.
@@ -15,7 +15,7 @@ The project followed a **structured audit process** to assess technical, adminis
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 - Define the **audit scope** (devices, networks, and internal systems)  
 - Conduct a **risk assessment** to identify high-risk areas  
 - Evaluate controls using **NIST Cybersecurity Framework (CSF)** categories  
@@ -24,7 +24,7 @@ The project followed a **structured audit process** to assess technical, adminis
 
 ---
 
-## 🛠 Tools, Frameworks & References
+##  Tools, Frameworks & References
 - **Frameworks:**
   - NIST Cybersecurity Framework (CSF)  
   - PCI DSS Guidelines  
@@ -37,24 +37,24 @@ The project followed a **structured audit process** to assess technical, adminis
 
 ---
 
-## 🔍 Key Findings
-- ❌ No **disaster recovery plan** in place  
-- 🔑 Weak **password and access controls**  
-- 🔒 Sensitive data **not encrypted**  
-- 🚫 No **intrusion detection system (IDS)** deployed  
-- 💾 No **regular backups** or **legacy system management**  
-- 👁️ Excessive access permissions to **customer data**  
+##  Key Findings
+-  No **disaster recovery plan** in place  
+-  Weak **password and access controls**  
+-  Sensitive data **not encrypted**  
+-  No **intrusion detection system (IDS)** deployed  
+-  No **regular backups** or **legacy system management**  
+-  Excessive access permissions to **customer data**  
 
 ---
 
-## 📈 Outcomes & Impact
+##  Outcomes & Impact
 - Developed a **roadmap** for improving Botium Toys’ security controls and compliance readiness  
 - Highlighted **critical risks** and provided **mitigation strategies**  
 - Strengthened the organization’s **audit readiness** and **cyber resilience**  
 
 ---
 
-## 🧩 Learning Takeaways
+##  Learning Takeaways
 This lab reinforced my skills in:
 - **Security audits** & **risk management**  
 - **Compliance analysis** (PCI DSS, GDPR, SOC)  
@@ -63,10 +63,10 @@ This lab reinforced my skills in:
 
 
 
-## ⚖ Ethics Notice
+##  Ethics Notice
 This project is for **educational purposes only**.  
 No real company data or production systems were used — all findings are from a **simulated lab environment**.
 
 ---
 
-> 🔐 *A secure business is not built in a day — but with the right steps, it’s built to last.*
+>  *A secure business is not built in a day — but with the right steps, it’s built to last.*
