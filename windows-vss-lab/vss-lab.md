@@ -1,42 +1,34 @@
-
-
 ````markdown
 # 🔐 Volume Shadow Copy Service (VSS) – Hands-On Security Lab
 
 ## 📌 Lab Overview
 This lab demonstrates how **Volume Shadow Copy Service (VSS)** can be abused by attackers to access historical versions of files, and how ransomware commonly deletes shadow copies to prevent recovery.
 
-The lab was performed in a **Windows 10 virtual machine** using **real-world attacker techniques**, not GUI-based restore points.
+Performed in a **Windows 10 VM**, using **real-world attacker techniques** (not GUI restore points).
 
 ---
 
 ## 🎯 Learning Objectives
-- Understand how VSS works
+- Understand VSS functionality
 - Create shadow copies manually
 - Access previous file versions using `GLOBALROOT`
-- Simulate ransomware-like behavior
+- Simulate ransomware behavior
 - Map techniques to MITRE ATT&CK
 
 ---
 
 ## 🧱 Lab Environment
-- **Operating System:** Windows 10 (VM)
-- **Access Level:** Local Administrator
-- **Tools Used:**
-  - `wmic`
-  - `vssadmin`
-  - `mklink`
-  - `cmd.exe`
+- OS: Windows 10 (VM)  
+- Access: Local Administrator  
+- Tools: `wmic`, `vssadmin`, `mklink`, `cmd.exe`
 
-> ⚠️ This lab was conducted in an isolated virtual environment.
+> ⚠️ Conducted in an isolated virtual environment.
 
 ---
 
 ## 🧠 Key Concept
-> **Restore Points ≠ VSS**
->
-> Attackers do NOT rely on the “Previous Versions” GUI.  
-> Instead, they directly interact with **Volume Shadow Copies**.
+> **Restore Points ≠ VSS**  
+> Attackers bypass GUI restore points and access **Volume Shadow Copies directly**.
 
 ---
 
@@ -48,25 +40,24 @@ echo ORIGINAL-DATA > C:\vss_lab.txt
 type C:\vss_lab.txt
 ````
 
+![Create file](images/create-file.png)
 
-![create file/r](images/create-file.png)
 ---
 
-### 2️⃣ Create a Shadow Copy (Attacker Method)
+### 2️⃣ Create a Shadow Copy
 
 ```cmd
 wmic shadowcopy call create Volume='C:\'
 ```
 
-**Expected Output:**
+Expected output:
 
 ```
 Method execution successful.
 ShadowID = "{GUID}"
 ```
 
-
-![step2-shadow-created.](images/step2-shadow-created..png)
+![Shadow created](images/step2-shadow-created.png)
 
 ---
 
@@ -81,7 +72,8 @@ Look for:
 ```
 \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopyX
 ```
-![step3-shadow-listed.](images/step3-list-shadows.jpg)
+
+![Shadow listed](images/step3-list-shadows.jpg)
 
 ---
 
@@ -92,76 +84,69 @@ echo MODIFIED-DATA > C:\vss_lab.txt
 type C:\vss_lab.txt
 ```
 
-![step4-file-modified.](images/step4-file-modified.png)
+![File modified](images/step4-file-modified.png)
 
 ---
 
 ### 5️⃣ Mount the Shadow Copy
 
-> ⚠️ Must be executed in **Command Prompt (CMD)**, not PowerShell
+> ⚠️ Must be run in **CMD**, not PowerShell
 
 ```cmd
 mklink /d C:\shadow \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopyX\
 ```
 
-**Expected Output:**
+Expected output:
 
 ```
 symbolic link created
 ```
 
-![step5-shadow-mounted.](images/step5-shadow-mounted.png)
+![Shadow mounted](images/step5-shadow-mounted.png)
+
 ---
 
-### 6️⃣ Access the Old Version of the File
+### 6️⃣ Access the Old Version
 
 ```cmd
 type C:\shadow\vss_lab.txt
 ```
 
-**Expected Output:**
+Expected output:
 
 ```
-SECRET-DATA
+ORIGINAL-DATA
 ```
 
-✅ This confirms recovery of the previous file version from the shadow copy.
-
-
-![step6-old-file-recovered.](images/step6-old-file-recovered.png)
+✅ Confirms recovery from shadow copy.
+![Old file recovered](images/step6-old-file-recovered.png)
 
 ---
 
-### 7️⃣ Attacker Cleanup (Ransomware Behavior)
+### 7️⃣ Attacker Cleanup
 
 ```cmd
 vssadmin delete shadows /all /quiet
-```
-
-Verify deletion:
-
-```cmd
 vssadmin list shadows
 ```
 
-**Expected Output:**
+Expected output:
 
 ```
 No shadow copies present
 ```
 
-![step7-shadows-deleted](images/step7-shadows-deleted.png)
+![Shadows deleted](images/step7-shadows-deleted.png)
+
 ---
 
 ## 🧨 Attacker Perspective
 
-Attackers abuse VSS to:
-
-* Access locked system files (e.g., SAM, SYSTEM)
+* Access locked system files (SAM, SYSTEM)
 * Extract sensitive or historical data
 * Delete backups to prevent recovery
 
-### Common Commands Used by Ransomware:
+Common commands:
 
 ```cmd
 vssadmin delete shadows /all /quiet
@@ -172,35 +157,33 @@ wmic shadowcopy delete
 
 ## 🛡️ Defender Perspective
 
-Defenders should monitor:
+Monitor:
 
 * `vssadmin.exe`
 * `wmic.exe`
 * `mklink.exe`
 * Use of `GLOBALROOT`
 
-### Relevant Windows Event:
-
-* **Event ID 4688** – Process Creation
+Relevant Event: **Event ID 4688 – Process Creation**
 
 ---
 
 ## 🧭 MITRE ATT&CK Mapping
 
-| Technique               | ID     |
-| ----------------------- | ------ |
-| Inhibit System Recovery | T1490  |
-| Defense Evasion         | TA0005 |
-| Impact                  | TA0040 |
+* Inhibit System Recovery – T1490
+* Defense Evasion – TA0005
+* Impact – TA0040
+
+> ⚠️ Tables replaced with lists for mobile readability
 
 ---
 
 ## 🧠 Key Takeaways
 
-* VSS is a powerful recovery feature and a high-value attack target
-* GUI restore points are not reliable for security analysis
-* Direct shadow copy access reflects real-world attacker behavior
-* Shadow copy deletion is a strong indicator of ransomware activity
+* VSS is both a recovery feature and high-value attack target
+* GUI restore points are unreliable for security analysis
+* Direct shadow copy access is how attackers really work
+* Shadow copy deletion signals ransomware activity
 
 ---
 
@@ -208,16 +191,15 @@ Defenders should monitor:
 
 ```
 vss-lab/
-│
 ├── README.md
-├── images/
-│   ├── step1-file-created.png
-│   ├── step2-shadow-created.png
-│   ├── step3-list-shadows.png
-│   ├── step4-file-modified.png
-│   ├── step5-shadow-mounted.png
-│   ├── step6-old-file-recovered.png
-│   └── step7-shadows-deleted.png
+└── images/
+    ├── step1-file-created.png
+    ├── step2-shadow-created.png
+    ├── step3-list-shadows.png
+    ├── step4-file-modified.png
+    ├── step5-shadow-mounted.png
+    ├── step6-old-file-recovered.png
+    └── step7-shadows-deleted.png
 ```
 
 ---
@@ -232,10 +214,7 @@ vss-lab/
 
 ## ⚠️ Disclaimer
 
-This project is for **educational purposes only**.
-All activities were conducted in a controlled virtual lab environment.
+For **educational purposes only** in a controlled VM environment.
 
 ```
-
-
 
